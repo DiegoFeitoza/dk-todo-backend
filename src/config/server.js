@@ -11,7 +11,7 @@ server.use(bodyParser.urlencoded({ extended: true }))
 server.use(bodyParser.json())
 server.use(allowCors)
 
-server.listen(proccess.env.PORT || port, function(){
+server.listen(process.env.PORT || port, function(){
     console.log(`Rodando BACKEND na porta ${port}`)
 })
 
